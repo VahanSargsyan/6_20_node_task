@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title MyRout
+body
+    h1 id: #{id}
+    p query 
+      each val, index in query
+        li= index + ': ' + val
+    p  cookies 
+      each val, index in cookies
+        li= index + ': ' + val 
+    p headers 
+      each val, index in headers
+        li= index + ': ' + val 
+    
